@@ -1,0 +1,53 @@
+page-map {
+
+    html{
+        font-size:8px;	
+      }
+
+    .item, .item-divider {
+        border-color: red;
+      }
+    .secondry-content {
+        background: rgb(60, 60, 60);
+    }
+
+    .primary-content {
+        background: rgb(22, 21, 21);
+    }
+    .balanced{
+        color: rgba(236, 84, 13, 0.445);
+      }
+    textarea{
+        height:200px;	
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .item-divider{
+        background: rgb(90, 85, 85);
+        color: rgb(226, 89, 10);
+      }
+
+      
+    .balanced{
+        color: rgb(113, 226, 7);
+       
+      }
+
+      .item-divider:active{
+        opacity: 0.8;
+      }
+
+     #rounded {
+        width: 100%;
+        height: 100px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;  
+    }
+    .mapping{
+        width:100%;
+        height:100%;
+    }
+}

@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+      <ion-buttons left>
+          <button ion-button icon-only (click)="Dismiss()">
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+      </ion-buttons>
+      <ion-title>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content color="dark">
+<ion-card color="dark">
+    <ion-list *ngFor="let item of items" (click)="itemClick(item.id)">
+        <h1>{{item.id}}</h1>
+        {{item.title}}
+    </ion-list>
+</ion-card>
+
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar color="dark">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>JsonCard
+      </button>
+      <!-- <ion-title>Home</ion-title> -->
+    </ion-navbar>
+  </ion-header>
+  
+  
+  
+  <ion-header>
+    <ion-navbar color="dark">
+      <button ion-button menuToggle="left" start>
+        <ion-icon name="menu"></ion-icon>JsonCard
+      </button>
+      <!-- <ion-title>
+        Home
+      </ion-title> -->
+      <button ion-button menuToggle="right" end>
+          <!-- <ion-icon name="search"></ion-icon> -->
+        </button>
+      <button ion-button menuToggle="right" end>
+          <ion-icon name="search"></ion-icon>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content class="secondry-content">
+
+    <ion-card *ngFor="let item of items">
+        <img [src]="item.thumbnailUrl"/>
+        <ion-card-content>
+          <ion-card-title>
+            {{item.title}}
+            <h1> {{item.id}}</h1>
+            </ion-card-title>
+          <p>
+            The most popular industrial group ever, and largely
+            responsible for bringing the music to a mass audience.
+          </p>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

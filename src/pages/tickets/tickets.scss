@@ -1,0 +1,23 @@
+page-tickets {
+    .tickets-content {
+        background: rgb(60, 60, 60);
+    }
+
+    ion-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .primary{
+        color: #E34A33; 
+    }
+
+    .secondcolor{
+        color: rgba(9, 175, 78, 0.486); 
+    }
+
+    .firstcolor{
+        color: rgba(224, 185, 10, 0.925); 
+    }
+}

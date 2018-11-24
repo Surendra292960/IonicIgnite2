@@ -1,0 +1,62 @@
+<ion-menu color="dark" [content]="content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="dark">
+      <ion-card color="dark" text-center class="hide-card">
+          <img src="assets/imgs/logo1.png" class="custom-avatar"/>
+          <h2>Victorcodex</h2>
+          <p>Have some p tag here</p>
+          <p>I am the third guy inline here</p>
+        </ion-card>
+    <ion-list>
+      
+        <ion-item-sliding #item>
+            <ion-item>
+              Item
+            </ion-item>
+            <ion-item-options side="left">
+              <button ion-button (click)="favorite(item)">Favorite</button>
+              <button ion-button color="danger" (click)="share(item)">Share</button>
+            </ion-item-options>
+        
+            <ion-item-options side="right">
+              <button ion-button (click)="unread(item)">Unread</button>
+            </ion-item-options>
+          </ion-item-sliding>
+
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon name={{p.icon}}></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+    <ion-card text-center class="hide-card">
+        <img src="assets/imgs/truck.png" class="super-avatar" item-right/>
+      </ion-card>
+  </ion-content>
+</ion-menu>
+
+
+
+
+<ion-menu [content]="content" color="dark" side="right" id="menu2">
+  <ion-header color="dark">
+      <ion-toolbar color="dark">
+          <ion-title>USER PROFILE</ion-title>
+      </ion-toolbar>
+  </ion-header>
+  
+  <ion-content color="dark">
+      <ion-list color="dark">
+        <button menuClose ion-item *ngFor="let p of pages1" (click)="openPage(p)">
+          <ion-icon name={{p.icon}}></ion-icon>
+          {{p.title}}
+        </button>
+      </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav color="dark" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

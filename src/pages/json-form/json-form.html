@@ -1,0 +1,107 @@
+<ion-header>
+    <ion-navbar color="dark">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>Json Form
+      </button>
+      <!-- <ion-title>Home</ion-title> -->
+    </ion-navbar>
+  </ion-header>
+  
+  
+  
+  <ion-header>
+    <ion-navbar color="dark">
+      <button ion-button menuToggle="left" start>
+        <ion-icon name="menu"></ion-icon>Json Form
+      </button>
+      <!-- <ion-title>
+        Home
+      </ion-title> -->
+      <button ion-button menuToggle="right" end>
+          <!-- <ion-icon name="search"></ion-icon> -->
+        </button>
+      <button ion-button menuToggle="right" end>
+          <ion-icon name="search"></ion-icon>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content>
+
+    <ion-grid class="secondry-content">
+        <ion-row>
+
+            <ion-col>
+                <ion-item class="data.properties['Load_Type']" class="secondry-content">
+                    <ion-label>{{data.properties["Load_Type"].lable}}</ion-label>
+                    <ion-input></ion-input>
+                    <ion-select interface="popover">
+                        <ion-option value="10">10</ion-option>
+                        <ion-option value="20">20</ion-option>
+                    </ion-select>
+                </ion-item>
+                  
+                  <ion-item class="secondry-content">
+                    <ion-label fixed>{{data.properties["Company_Name"].lable}}</ion-label>
+                    <ion-input type="email"></ion-input>
+                  </ion-item>
+                  
+                  <ion-item class="secondry-content">
+                    <ion-label fixed>{{data.properties["Consigner_Name"].lable}}</ion-label>
+                    <ion-input type="tel"></ion-input>
+                  </ion-item>
+                                    
+                  <ion-item class="secondry-content">
+                      <ion-label>{{data.properties["Dagerous_Name"].lable}}</ion-label>
+                      <ion-input></ion-input>
+                      <ion-select interface="popover">
+                          <ion-option value="10">10</ion-option>
+                          <ion-option value="20">20</ion-option>
+                      </ion-select>
+                  </ion-item>
+
+                  <ion-item class="ion-item" class="secondry-content">
+                      <ion-label>{{data.properties["Tank_Selection"].lable}}</ion-label>
+                      <ion-input></ion-input>
+                      <ion-select interface="popover">
+                          <ion-option value="data.properties['Take Selection'].values['0']">{{data.properties["Tank_Selection"].values['0']}}</ion-option>
+                          <ion-option value="data.properties['Take Selection'].values['1']">{{data.properties["Tank_Selection"].values['1']}}</ion-option>
+                      </ion-select>
+                  </ion-item>  
+                  
+                  <ion-item class="ion-item" class="secondry-content">
+                    <ion-label>{{data.properties["Arrival_Selection"].lable}}</ion-label>
+                    <ion-input></ion-input>
+                    <ion-select interface="popover">
+                        <ion-option value="data.properties['Take Selection'].values['0']">{{data.properties["Arrival_Selection"].values['0']}}</ion-option>
+                        <ion-option value="data.properties['Take Selection'].values['1']">{{data.properties["Arrival_Selection"].values['1']}}</ion-option>
+                    </ion-select>
+                </ion-item> 
+
+                
+                <ion-item class="ion-item" class="secondry-content">
+                  <ion-label>{{data.properties["Finish_Selection"].lable}}</ion-label>
+                  <ion-input></ion-input>
+                  <ion-select interface="popover">
+                      <ion-option value="data.properties['Take Selection'].values['0']">{{data.properties["Finish_Selection"].values['0']}}</ion-option>
+                      <ion-option value="data.properties['Take Selection'].values['1']">{{data.properties["Finish_Selection"].values['1']}}</ion-option>
+                  </ion-select>
+              </ion-item> 
+
+
+              <ion-item class="secondry-content">
+                <ion-label floating>Comments...</ion-label><ion-icon ios="ios-mic" md="md-mic" item-right></ion-icon>
+                <ion-textarea elasticTextArea [(ngModel)]="description2">
+                </ion-textarea>
+              </ion-item>
+
+              
+            </ion-col>
+        </ion-row>
+  </ion-grid >
+
+    
+
+</ion-content>

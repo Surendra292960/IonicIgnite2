@@ -1,0 +1,35 @@
+page-page2 {
+
+    // .item-md{
+    //     padding-left: 16px;
+    //     padding-right: 0;
+    //     position: relative;
+    //     font-size: 1.6rem;
+    //     font-weight: 1px;
+    //     text-transform: none;
+    //     color: #ffff;
+    // }
+
+    .secondry-content {
+        background: rgb(60, 60, 60);
+    }
+
+    .primary-content {
+        background: rgb(22, 21, 21);
+    }
+    .balanced{
+        color: rgba(255, 0, 0, 0.699);
+      }
+    textarea{
+        height:200px;	
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .item-divider{
+        background: rgb(90, 85, 85);
+        color: white;
+      }
+      .item-divider:active{
+        opacity: 0.8;
+      }
+}

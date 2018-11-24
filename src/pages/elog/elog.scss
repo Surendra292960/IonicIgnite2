@@ -1,0 +1,50 @@
+page-elog {
+    .secondry-content {
+        background: rgb(60, 60, 60);
+    }
+
+    .primary-content {
+        background: rgb(22, 21, 21);
+    }
+    .ternary-content{
+        background: rgba(12, 223, 22, 0.144);
+    }
+    .balanced{
+        color: rgba(32, 179, 40, 0.884);
+      }
+    textarea{
+        height:200px;	
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .item-divider{
+        background: rgb(90, 85, 85);
+        color: white;
+      }
+      .item-divider:active{
+        opacity: 0.8;
+      }
+
+
+      
+.custom-avatar {
+    height: 20vw;
+    width: 20vw;
+    border: 10px solid #fff;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .super-avatar {
+    height: 20vw;
+    width: 20vw;
+    border: 10px solid #fff;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    //bottom: 50px; right: 50px;
+  }
+}
